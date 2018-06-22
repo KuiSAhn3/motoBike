@@ -1,0 +1,855 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.outside {
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+.main {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.main-inside {
+    width: 90%;
+    height: 100%;
+    /*border: black 1px solid;*/
+}
+.heading {
+    width: 100%;
+    height: 27%;
+    /*border: black 1px solid;*/
+}
+.heading-imgNav {
+    width: 100%;
+    height: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /*border: black 1px solid;*/
+}
+.heading-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.heading-nav {
+    width: 50%;
+    height: 100%;
+}
+.heading-nav-heading {
+    width: 100%;
+    height: 20%;
+    margin-top: 9%;
+    font-family: "等线";
+    font-size: 110%;
+    color: #0088b8;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+.heading-nav-inner {
+    width: 100%;
+    height: 20%;
+}
+.heading-nav-inner ul {
+    width: 100%;
+    height: 100%;
+
+}
+.heading-nav-inner li {
+    width: 19%;
+    height: 100%;
+    display: inline-block;
+    text-align: right;
+}
+.heading-nav-inner a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+    font-family: "Leelawadee UI Semilight";
+}
+.heading-nav-inner a:hover {
+    color: #0088b8;
+}
+.heading-main {
+    width: 100%;
+    height: 73%;
+    /*border: black 1px solid;*/
+}
+.heading-main-navSearch {
+    width: 100%;
+    height: 10%;
+    background-color: #2f302a;
+    display: flex;
+    align-items: stretch;
+}
+.heading-main-nav {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.heading-main-nav div {
+    width: 15%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading-main-nav a {
+    text-decoration: none;
+    font-family: "Leelawadee UI Semilight";
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: inherit;
+    border-right: #939393 1px solid;
+    transition: all 0.2s;
+}
+.heading-main-nav a:hover,.heading-main-nav a:active{
+    background-color: #0088b8;
+}
+.heading-main-search {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.search-inner {
+    width: 50%;
+    height: 70%;
+    margin-right: 3%;
+    border-radius: 5px;
+    background-color: white;
+}
+.search-inner form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-inner input {
+    width: 98%;
+    height: 80%;
+    border: none;
+}
+.heading-main-inf {
+    width: 100%;
+    height: 90%;
+    background-color: #4b4b4b;
+}
+.seal-inf {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+.inf-1 {
+    width: 100%;
+    height: 50%;
+    background-color: #2f302a;
+    border-top: #4b4b4b 1px solid;
+    cursor: default;
+}
+.inf-2 {
+    width: 100%;
+    height: 50%;
+    background-color: #0088b8;
+    cursor: default;
+    border-top: #0088b8 1px solid;
+}
+.seal-img {
+    width: 79.8%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.seal-inner {
+    width: 786px;
+    height: 356px;
+    /*border: white 1px solid;*/
+    overflow: hidden;
+    position: relative;
+}
+.inner-img-roll {
+    width: 6000px;
+    height: 100%;
+    position: absolute;
+    left: -786px;
+    /*transition: all 1s;*/
+}
+.inner-img-roll img {
+    width: 786px;
+    height: 356px;
+    float: left;
+}
+.buttons {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.buttons span {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: white 1px solid;
+    border-radius: 50%;
+}
+.selected {
+    background-color: #0088b8;
+}
+.inf-inner-1 {
+    width: 100%;
+    height: 20%;
+    margin-top: 5%;
+    font-family: Verdana;
+    font-size: 180%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inf-inner-2 {
+    width: 100%;
+    height: 40%;
+    font-family: Verdana;
+    font-size: 450%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inf-inner-3 {
+    width: 100%;
+    height: 15%;
+    margin-top: 1%;
+    font-family: Verdana;
+    font-size: 140%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inf-inner-4 {
+    width: 100%;
+    height: 10%;
+    margin-top: 1%;
+}
+.inf-inner-4 a{
+    text-decoration: none;
+    color: white;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inf-inner-4 a:hover {
+    text-decoration: underline;
+}
+.inf-inner-5  {
+    width: 100%;
+    height: 20%;
+    margin-top: 15%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 160%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inf-inner-6 {
+    width: 100%;
+    height: 25%;
+    font-family: "Microsoft YaHei UI";
+    font-size: 250%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-left {
+    width: 50px;
+    height: 70px;
+    left: 10px;
+    top: 130px;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 300%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    visibility: hidden;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+}
+.arrow-right {
+    width: 50px;
+    height: 70px;
+    right: 10px;
+    top: 130px;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 300%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    visibility: hidden;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+}
+.seal-inner:hover .arrow-left {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.4);
+}
+.seal-inner:hover .arrow-right {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.4);
+}
+.arrow-left:hover {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+}
+.arrow-right:hover {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+}
+.top-sellers {
+    width: 100%;
+    height: 900px;
+}
+.ts-heading {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ts-heading-inner {
+    width: 100%;
+    height: 35%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 150%;
+    line-height: 220%;
+    border: #eeeeee 1px solid;
+}
+.sp1 {
+    color: #0088b8;
+    margin-left: 20px;
+    left: 20px;
+}
+.ts-img {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.ts-img-inner {
+    width: 24%;
+    height: 100%;
+    margin-left: 7px;
+    border: #eeeeee 1px solid;
+}
+.ts-img-inner-index {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ts-img-inner-index img {
+    width: 100%;
+    height: auto;
+}
+.ts-img-inner-inf {
+    width: 100%;
+    height: 25%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 200%;
+    color: #0088b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ts-img-inner-price {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-top: #eeeeee 1px solid;
+}
+.price-inner {
+    width: 50%;
+    height: 100%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price-inner p {
+    margin-left: 10px;
+}
+.add-cart {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add-cart-inner {
+    width: 70%;
+    height: 60%;
+    margin-left: 10px;
+    background-color: #0088b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aci-a {
+    text-decoration: none;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 90%;
+    color: white;
+}
+.add-cart-inner:hover .aci-a {
+    text-decoration: underline;
+}
+.f-products-heading {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.f-products-heading-inner {
+    width: 100%;
+    height: 40%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 150%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: #eeeeee 1px solid;
+}
+.f-products-img {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.fp-img-inner {
+    width: 24%;
+    height: 100%;
+    margin-left: 7px;
+    border: #eeeeee 1px solid;
+}
+.fp-img-inner-index {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fp-img-inner-index img {
+    width: 100%;
+}
+.fp-img-inner-inf {
+    width: 100%;
+    height: 22%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 200%;
+    color: #0088b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fp-img-inner-price {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-top: #eeeeee 1px solid;
+}
+.fp-price-inner {
+    width: 50%;
+    height: 100%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fp-price-inner p {
+    margin-left: 10px;
+}
+.fp-add-cart {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fp-add-cart-inner {
+    width: 70%;
+    height: 60%;
+    margin-left: 10px;
+    background-color: #0088b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fp-aci-a {
+    text-decoration: none;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 90%;
+    color: white;
+}
+.fp-add-cart-inner:hover .fp-aci-a {
+    text-decoration: underline;
+}
+.after-sell {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: #e0e0e0 1px solid;
+}
+.after-sell-inner {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.after-sell-inf-1 {
+    width: 32%;
+    height: 100%;
+    background-color: #0088b8;
+    transition: all 0.4s;
+}
+.after-sell-inf-2 {
+    width: 32%;
+    height: 100%;
+    margin-left: 2%;
+    transition: all 0.4s;
+    border: #eeeeee 4px solid;
+}
+.after-sell-inf-3 {
+    width: 32%;
+    height: 100%;
+    margin-left: 2%;
+    background-color: black;
+    transition: all 0.4s;
+}
+.asi-1-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asi-1-top-inner {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.asi-1-top-inner-img {
+    width: 25%;
+    height: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.asi-1-top-inner-img img {
+    width: 90%;
+    height: 70%;
+}
+.asi-1-top-inner-p {
+    width: 75%;
+    height: 100%;
+    font-family: Verdana;
+    color: white;
+}
+.asi-1-p1 {
+    font-size: 170%;
+    margin-top: 2%;
+    letter-spacing: -1.5px;
+}
+.asi-1-p2 {
+    font-size: 101%;
+    letter-spacing: -1.5px;
+}
+.asi-1-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-size: 70%;
+    color: white;
+}
+.asi-1-bottom p {
+    margin-top: -20px;
+}
+.after-sell-inf-1:hover {
+    background-color: black;
+}
+.asi-2-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asi-2-top-inner {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.asi-2-top-inner-img {
+    width: 25%;
+    height: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.asi-2-top-inner-img img {
+    width: 80%;
+    height: 70%;
+}
+.asi-2-top-inner-p {
+    width: 75%;
+    height: 100%;
+    font-family: Verdana;
+    color: #0088b8;
+}
+.asi-2-p1 {
+    font-size: 120%;
+    margin-top: 5%;
+    letter-spacing: -1.5px;
+}
+.asi-2-p2 {
+    font-size: 170%;
+    letter-spacing: -1.5px;
+}
+.asi-2-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-size: 70%;
+    color: #0088b8;
+}
+.asi-2-bottom p {
+    margin-top: -20px;
+}
+.after-sell-inf-2:hover {
+    background-color: #eeeeee;
+}
+.asi-3-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asi-3-top-inner {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.asi-3-top-inner-img {
+    width: 25%;
+    height: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.asi-3-top-inner-img img {
+    width: 80%;
+    height: 70%;
+}
+.asi-3-top-inner-p {
+    width: 75%;
+    height: 100%;
+    font-family: Verdana;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.asi-3-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 250%;
+    letter-spacing: -1.5px;
+}
+.asi-3-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-size: 70%;
+    color: #eeeeee;
+}
+.asi-3-bottom p {
+    margin-top: -20px;
+}
+.after-sell-inf-3:hover {
+    background-color: #0088b8;
+}
+.bottom {
+    width: 100%;
+    height: 63%;
+}
+.bottom-nav-outside {
+    width: 100%;
+    height: 75%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-bottom: #e0e0e0 1px solid;
+}
+.bottom-nav-inner-1 {
+    width: 23%;
+    height: 100%;
+}
+.bottom-nav-inner-2 {
+    width: 23%;
+    height: 100%;
+    margin-left: 2.2%;
+}
+.bottom-nav-inner-3 {
+    width: 23%;
+    height: 100%;
+    margin-left: 2.2%;
+}
+.bottom-nav-inner-4 {
+    width: 23%;
+    height: 100%;
+    margin-left: 2.2%;
+}
+.bottom-nav-inner-heading {
+    width: 100%;
+    height: 20%;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-nav-inner {
+    width: 100%;
+    height: 80%;
+}
+.bottom-nav-inner ul {
+    margin-top: 10px;
+    list-style: none;
+}
+.bottom-nav-inner li {
+    text-decoration: none;
+    padding-top: 7px;
+}
+.bottom-nav-inner a {
+    text-decoration: none;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 80%;
+    color: black;
+    letter-spacing: 1px;
+}
+.bottom-nav-inner a:hover {
+    color: #0088b8;
+}
+.bottom-bottom {
+    width: 100%;
+    height: 25%;
+    font-family: "Microsoft YaHei UI Light";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom-bottom p {
+    margin-top: 30%;
+}
